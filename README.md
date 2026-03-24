@@ -8,7 +8,7 @@ Repository for
    
 3. Hiersche_2026_CommBio_stats.m: This file contains code for reproducing all stats in the manuscript (except the rmANOVA, for which need to use R code). This can be used to get the data that is listed in rmANOVA_data. It also reproduces the tables & figures. Each section allows you to change the sample to the group that you want the results for.
 
-# Data Stuctures Overview
+## Data Stuctures Overview
 Hiersche_2026_CommBio_dataframe.mat:
 
 df: Contains all subject lists (de-identified), motion, age, selectivity, and overlap (dice & dice perm variables) information.
