@@ -11,7 +11,7 @@ Repository for
 # Data Stuctures Overview
 Hiersche_2026_CommBio_dataframe.mat:
 
-df:Contains all subject lists (de-identified), motion, age, selectivity, and overlap (dice & dice perm variables) information.
+df: Contains all subject lists (de-identified), motion, age, selectivity, and overlap (dice & dice perm variables) information.
 
 - subs: The order of these lists matches the order of the data in each other structure. This also shows all possible samples used across the paper. CF are the connectivity fingerprinting samples, motmatch are the samples where motion during the lang and ToM tasks are not different. TP1 and TP2 are the time point 1 and time point 2 child longitudinal data (different samples for modeling and selectivity/overlap analyses). Kids and Adults are the main cross sectional samples for the primary results reported in the manuscript. 
 
@@ -28,12 +28,13 @@ df:Contains all subject lists (de-identified), motion, age, selectivity, and ove
 - langsel1 (tomsel): This is the selectivity of each of the fROIs (in ROInames) to language (or ToM) for all samples for the networks in the network variable.
 
 cfmodelresults: Contains the correlation values between observed and predicted language or ToM activation across different types of models run for each sample 
-    - selfprediction: The model performance (R value) when using a subject's own connectivity to predict function.
+- selfprediction: The model performance (R value) when using a subject's own connectivity to predict function.
 
-    - wrongBpred: The model performance when using a subject's own connectivity data, but the beta values from the opposite task.
+- wrongBpred: The model performance when using a subject's own connectivity data, but the beta values from the opposite task.
 
-    - otherpred: The model performance when using each other subject's connectivity to predict activation. Rows - subject; columns - other subjects. 
+- otherpred: The model performance when using each other subject's connectivity to predict activation. Rows - subject; columns - other subjects. 
     
-    - betas: These are the beta values for each subject's model for all 145 predictors in the variable regions.
-    - meanbetas: These are the mean beta values across subjects for each sample (kids and adults separate).
+- betas: These are the beta values for each subject's model for all 145 predictors in the variable regions.
+  
+- meanbetas: These are the mean beta values across subjects for each sample (kids and adults separate).
 
